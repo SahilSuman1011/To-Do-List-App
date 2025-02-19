@@ -33,7 +33,7 @@ A modern, responsive Todo List application built with React and vanilla CSS.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/todo-app.git
+git clone https://github.com/SahilSuman1011 To-Do-List-App.git
 cd todo-app
 ```
 
@@ -68,7 +68,8 @@ The built files will be in the `dist` directory.
 ## Project Structure
 
 ```
-todo-app/
+todo-project/
+frontend/
 ├── src/
 │   ├── components/
 │   │   ├── TodoApp.jsx
@@ -92,11 +93,17 @@ todo-app/
 ## Component Structure
 
 - `App.jsx`: Root component
+- `App.css`: = Styling component
 - `TodoApp.jsx`: Main container component
+- `TodoApp.css`: Main container styling component
 - `TodoForm.jsx`: Handles new todo input
+- `TodoForm.css`: new todo input styling
 - `TodoList.jsx`: Displays todo items
+- `TodoList.css`: todo items Display styling
 - `TodoFilter.jsx`: Filter controls
+- `TodoFilter.css`: Filter controls styling
 - `TodoStats.jsx`: Displays todo statistics
+- `TodoStats.css`: todo statistics styling
 
 ## Features in Detail
 
