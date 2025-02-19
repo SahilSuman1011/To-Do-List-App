@@ -1,0 +1,161 @@
+/* Color Variables */
+:root {
+    --color-primary: #4f78b2;
+    --color-secondary: #cbd5e0;
+    --color-hover: #4299e1;
+    --color-completed: #48bb78;
+    --color-completed-bg: #f0fff4;
+    --color-completed-border: #9ae6b4;
+    --color-text: #2d3748;
+    --color-text-muted: #718096;
+    --color-delete: #e53e3e;
+    --color-delete-bg: #fff5f5;
+    --color-empty-bg: white;
+    --color-empty-shadow: rgba(0, 0, 0, 0.05);
+  }
+  
+  .todo-list {
+    display: grid;
+    gap: 3rem;
+    background: var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--color-empty-shadow);
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    justify-content: space-between;
+    padding: 1rem;
+    background: white; /* Ensure background color matches the rest of the design */
+    border: 1px solid var(--color-secondary);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+  
+  .todo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--color-empty-shadow);
+    border-color: var(--color-secondary);
+  }
+  
+  .todo-item.completed {
+    background: var(--color-completed-bg);
+    border-color: var(--color-completed-border);
+  }
+  
+  .todo-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+  }
+  
+  .toggle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 50%;
+    background: white; /* Ensure background color is visible */
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+  }
+  
+  .toggle-button:hover {
+    border-color: var(--color-hover);
+    background: #ebf8ff;
+  }
+  
+  .toggle-button.completed {
+    background-color: var(--color-completed);
+    border-color: var(--color-completed);
+    color: white;
+  }
+  
+  .todo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .task-text {
+    color: var(--color-text);
+    font-size: 1rem;
+    font-weight: 500;
+    word-break: break-word;
+  }
+  
+  .completed .task-text {
+    text-decoration: line-through;
+    color: var(--color-text-muted);
+  }
+  
+  .date {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+  }
+  
+  .delete-button {
+    color: #a0aec0;
+    padding: 0.5rem;
+    border-radius: 6px;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+  
+  .todo-item:hover .delete-button {
+    opacity: 1;
+  }
+  
+  .delete-button:hover {
+    color: var(--color-delete);
+    background: var(--color-delete-bg);
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--color-text-muted);
+    background: var(--color-empty-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--color-empty-shadow);
+  }
+  
+  .empty-state svg {
+    margin: 0 auto 1rem;
+    color: #a0aec0;
+  }
+  
+  .empty-state p {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1400px) {
+    .todo-list {
+      padding: 1rem;
+    }
+  
+    .todo-item {
+      padding: 0.75rem;
+    }
+  
+    .todo-content {
+      gap: 0.75rem;
+    }
+  
+    .task-text {
+      font-size: 0.875rem;
+    }
+  }

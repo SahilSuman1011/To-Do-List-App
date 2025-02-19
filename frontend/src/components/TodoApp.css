@@ -1,0 +1,64 @@
+.todo-container {
+    min-height: 100vh;
+    padding: 1rem;
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+  }
+  
+  .todo-app {
+    max-width: 1200px;
+
+    margin: 2rem auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+  }
+  
+  .todo-header {
+    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+    padding: 2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .todo-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-content {
+    padding: 2rem;
+    background: #f8fafc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 800px) {
+    .todo-app {
+      margin: 1rem auto;
+      border-radius: 12px;
+    }
+  
+    .todo-header {
+      padding: 1.5rem;
+    }
+  
+    .todo-header h1 {
+      font-size: 2rem;
+    }
+  
+    .todo-content {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .todo-container {
+      padding: 0.5rem;
+    }
+  
+    .todo-header h1 {
+      font-size: 1.75rem;
+    }
+  }

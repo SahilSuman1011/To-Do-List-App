@@ -1,0 +1,31 @@
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+  }
+  
+  .stats-container span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 40px) {
+    .stats-container {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .stats-container span {
+      justify-content: center;
+    }
+  }
